@@ -1,0 +1,2 @@
+allow devicesettings_app hal_custom_hwcontrol_service:service_manager find;
+binder_call(devicesettings_app, hal_custom_hwcontrol)

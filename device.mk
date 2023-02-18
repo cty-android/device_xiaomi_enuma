@@ -31,6 +31,11 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    custom.hardware.hwcontrol-service \
+    enumaParts
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
