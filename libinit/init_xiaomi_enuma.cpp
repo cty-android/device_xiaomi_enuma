@@ -5,10 +5,11 @@
  */
 
 #include <libinit_dalvik_heap.h>
-#include <libinit_variant.h>
+#include <libinit_utils.h>
 
 #include "vendor_init.h"
 
 void vendor_load_properties() {
     set_dalvik_heap();
+    property_override("persist.radio.multisim.config", "ss", 1);
 }
